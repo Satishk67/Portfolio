@@ -1,7 +1,7 @@
 
-# 🚀 Project Title 
+# 🚀 Satis Kumar 
 
-**A short, catchy description** that explains what your project does and why it matters. Add emojis for personality! ✨
+"Simplifying complexity with elegant solutions. 💡" ✨
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/repo-name.svg)](https://github.com/yourusername/repo-name/stargazers)

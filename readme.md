@@ -1,5 +1,4 @@
-
-# 🚀 Project Title 
+# 🚀 Project Title
 
 **A short, catchy description** that explains what your project does and why it matters. Add emojis for personality! ✨
 
@@ -10,12 +9,14 @@
 ![Banner Image](https://via.placeholder.com/1280x400.png?text=Project+Banner+Here+%7C+Add+Screenshots+or+Demo)
 
 ## ✨ Features
+
 - **Blazing Fast** - Built with performance in mind ⚡
 - **Easy Integration** - Simple API and clear documentation 📚
 - **Customizable** - Adapts to your needs 🎨
 - **Cross-Platform** - Works everywhere 🌍
 
 ## 🚀 Quick Start
+
 ```bash
 # Clone repository
 git clone https://github.com/yourusername/repo-name.git
@@ -25,3 +26,4 @@ npm install
 
 # Run project
 npm start
+```

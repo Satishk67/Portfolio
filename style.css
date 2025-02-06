@@ -156,6 +156,7 @@ body {
 button, button a {
   padding: 15px;
   box-sizing: border-box;
+  text-decoration: none;
   border: none;
   border-radius: 20px;
   background-color: rgb(61, 229, 244);

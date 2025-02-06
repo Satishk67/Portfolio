@@ -153,7 +153,7 @@ body {
   column-gap: 100px;
 }
 
-button {
+button, button a {
   padding: 15px;
   box-sizing: border-box;
   border: none;

@@ -1,34 +1,32 @@
-<<<<<<< HEAD
-# 🚀 Project Title
-=======
+# 🧑‍💻 Satish Kumar
 
-# 🚀 Satish Kumar 
->>>>>>> 66711464b9341a30c69c447f5dafdb091468def1
+"Simplifying complexity with elegant solutions."
 
- "Simplifying complexity with elegant solutions. 💡"
+## 🧑‍🚀 Introduction
+
+I am a passionate developer with experience in building scalable web applications using modern technologies. I enjoy transforming ideas into reality and continuously learning to improve my craft.
+
+## Live Demo
+
+Check out the live version of my portfolio [here](https://portfolio-sooty-seven-51.vercel.app).
 
 ## ✨ Features
-<<<<<<< HEAD
 
-- **Blazing Fast** - Built with performance in mind ⚡
-- **Easy Integration** - Simple API and clear documentation 📚
-- **Customizable** - Adapts to your needs 🎨
-- **Cross-Platform** - Works everywhere 🌍
+- Customizable - Adapts to your needs
+- Cross-Platform - Works everywhere
 
-## 🚀 Quick Start
+## Technologies Used
 
-```bash
-# Clone repository
-git clone https://github.com/yourusername/repo-name.git
+- HTML
+- CSS
+- JavaScript
 
-# Install dependencies
-npm install
+## 🚀 Installation and Usage
 
-# Run project
-npm start
-```
-=======
-- **Customizable** - Adapts to your needs 🎨
-- **Cross-Platform** - Works everywhere 🌍
+To run this project locally:
 
->>>>>>> 66711464b9341a30c69c447f5dafdb091468def1
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/satishk67/portfolio.git
+   cd portfolio

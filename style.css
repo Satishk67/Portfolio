@@ -132,13 +132,22 @@ body {
 }
 
 .designation {
-  font-family: oswald, serif;
+  font-family: poppins, serif;
   height: 34px;
   font-size: 30px;
   color: rgb(92, 201, 241);
   display: inline;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
+
+.typed-cursor {
+  padding-left: 3px;
+  color: rgb(92, 201, 241);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: poppins, serif;
+}
+
 
 .about {
   color: var(--textcolor);
@@ -158,21 +167,38 @@ body {
 }
 
 button, button a {
-  padding: 15px;
+  padding: 15px 25px;
+  font-size: 13px;
   box-sizing: border-box;
   text-decoration: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: rgb(61, 229, 244);
   font-family: poppins, serif;
   color: black;
   font-weight: 500;
   transition: box-shadow 0.1s cubic-bezier(1, 0.15, 0.05, 1.13);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-button:hover {
+.btn-home{
+  fill: black;
+  width: 15px;
+  height: 22px;
+  box-sizing: border-box;
+  transition: fill 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0.673);
+  color: white;
   box-shadow: 0px 0px 10px cyan;
-  transform: scale(1.05);
+}
+button:hover .btn-home{
+  fill: white;
+  transform: translateX(4px);
 }
 
 .me {
@@ -433,4 +459,24 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   font-weight: 700;
+}
+
+.page-up-button{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.page-btn{
+  padding: 5px;
+  border-radius: 50%;
+  background-color: grey;
+  stroke: cyan;
+  transition: background-color 0.4s ease-in-out, stroke 0.4s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.page-btn:hover{
+  background-color: black;
+  stroke: white;
+  transform: scale(1.1);
 }

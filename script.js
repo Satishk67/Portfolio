@@ -4,8 +4,8 @@ const typed = new Typed(".designation", {
     typeSpeed: 60,
     backSpeed: 60,
     loop: true,
-    showCursor: true, // Ensure the cursor is shown
-    cursorChar: '|',  // Define the cursor character
+    showCursor: true, 
+    cursorChar: '>',  
 });
 
 window.onload = function () {

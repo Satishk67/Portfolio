@@ -60,6 +60,154 @@ body {
     transform: translateY(0);
   }
 }
+
+/*  Tablets & Small Laptops (Width < 1024px) */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5vw;
+  }
+
+  .intro {
+    width: 80vw;
+  }
+
+  .button {
+    column-gap: 40px;
+    padding: 20px;
+  }
+
+  .me {
+    width: 350px;
+    height: 350px;
+  }
+
+  .project-box {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5vh;
+  }
+}
+
+/*  Mobile Devices (Width < 768px) */
+@media (max-width: 768px) {
+  /* Navbar */
+
+  .name{
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navtab {
+    column-gap: 10px;
+  }
+
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .greet {
+    font-size: 35px;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+
+  .button {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+
+  .me {
+    width: 280px;
+    height: 280px;
+  }
+
+  .lang-frames {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+  }
+
+  .lang-card {
+    width: 40%;
+  }
+
+  .project-box {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+/* Very Small Devices (Width < 480px) */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar {
+    padding: 15px;
+  }
+
+  .navitems {
+    font-size: 16px;
+  }
+
+  .greet {
+    font-size: 30px;
+  }
+
+  .about {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .button {
+    padding: 10px;
+  }
+
+  .me {
+    width: 250px;
+    height: 250px;
+  }
+
+  .lang-frames {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lang-card {
+    width: 80%;
+  }
+
+  .proj {
+    width: 90%;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .page-up-button {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+
 /*  NAV BAR  */
 
 .name {
@@ -160,7 +308,7 @@ body {
 }
 
 .button {
-  padding: 50px;
+  padding: 20px 0px;
   display: flex;
   justify-content: center;
   column-gap: 100px;
@@ -201,6 +349,10 @@ button:hover .btn-home{
   transform: translateX(4px);
 }
 
+.me-box{
+  perspective: 1000px;
+}
+
 .me {
   border: 2px solid rgba(245, 245, 240, 0.686);
   border-radius: 250px;
@@ -210,6 +362,8 @@ button:hover .btn-home{
   object-fit: cover;
   object-position: top;
   animation: zoomin 1s ease-in-out;
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
 }
 
 /* EDUCATION PART */
@@ -417,6 +571,12 @@ button:hover .btn-home{
   justify-content: center;
   align-items: center;
   column-gap: 30px;
+}
+
+.social-links-box{
+  width: 76px;
+  height: 76px;
+  box-sizing: border-box;
 }
 
 .social-links {

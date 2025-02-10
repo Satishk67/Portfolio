@@ -363,6 +363,15 @@ button:hover .btn-home{
   transition: transform 0.2s ease-in-out;
 }
 
+.proj a{
+  text-decoration: none;
+
+}
+
+.proj a:hover{
+  text-decoration: underline;
+}
+
 .proj:hover {
   transform: scale(1.1);
 }

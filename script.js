@@ -8,6 +8,13 @@ const typed = new Typed(".designation", {
     cursorChar: '>',  
 });
 
+const pageUpBtn = document.getElementById("page-up-button");
+window.onscroll = function () {
+            if (document.documentElement.scrollTop <= 50) {
+                pageUpBtn.style.display = "none"; 
+            } 
+};
+
 window.onload = function () {
     window.location.href = "#";
 };

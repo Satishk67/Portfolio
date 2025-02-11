@@ -8,19 +8,6 @@ const typed = new Typed(".designation", {
     cursorChar: '>',  
 });
 
-const pageUpBtn = document.getElementByClassName("page-up-button");
-window.onscroll = function () {
-            if (document.documentElement.scrollTop > 50) {
-                pageUpBtn.style.display = "block";
-            } else {
-                pageUpBtn.style.display = "none"; 
-            }
-};
-
-function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
 window.onload = function () {
     window.location.href = "#";
 };

@@ -612,6 +612,7 @@ button:hover .btn-home{
   visibility: hidden;
   transition: transform 0.4s ease-in-out;
   transition: visibility 0.2s ease-in-out;
+  box-sizing: border-box;
 }
 
 .social-links:hover ~ .comment{
@@ -628,6 +629,15 @@ button:hover .btn-home{
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   font-weight: 700;
+  transition: background-color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.footer:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 10px cyan;
 }
 
 .page-up-button{

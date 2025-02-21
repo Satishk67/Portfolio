@@ -5,9 +5,9 @@
   padding: 0;
 }
 
-html{
-  scroll-behavior:smooth;
-} 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-image: var(--bgcolor);
@@ -23,6 +23,30 @@ body {
     rgba(7, 7, 7, 0.94),
     rgba(16, 15, 15, 0.923)
   );
+}
+
+/* Scrollbar Width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: var(--bgcolor);
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  width: 4px;
+  height: 6px;
+  border-radius: 10px;
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: aqua;
+  box-shadow: 0px 6px 8px black;
 }
 
 @keyframes fadeIn {
@@ -94,7 +118,7 @@ body {
 @media (max-width: 768px) {
   /* Navbar */
 
-  .name{
+  .name {
     display: none;
   }
 
@@ -206,17 +230,29 @@ body {
   }
 }
 
-
 /*  NAV BAR  */
+body {
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
 
 .name {
+  background: none;
+  border: none;
+  cursor: pointer;
   color: var(--headcolor);
-  text-shadow: 2px 2px 4px rgb(245, 245, 242);
+  text-shadow: 0px 0px 2px rgb(245, 245, 242);
+  font-weight: 800;
   font-size: xx-large;
   text-decoration: none;
   font-family: great vibes, serif;
   letter-spacing: 3px;
   animation: fadeIn 1s cubic-bezier(0.63, 0.2, 0.4, 0.98) forwards;
+  transition: transform 0.5s ease-in-out;
+}
+
+#theme-btn {
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar {
@@ -251,8 +287,8 @@ body {
 
 .navitems:hover {
   color: var(--headcolor);
-  text-shadow: 0px 0px 4px white;
-  border-bottom: 2px solid white;
+  text-shadow: 0px 0px 2px cyan;
+  border-bottom: 2px solid var(--headcolor);
   translate: 0px -2px 0px;
 }
 
@@ -295,7 +331,6 @@ body {
   font-family: poppins, serif;
 }
 
-
 .about {
   color: var(--textcolor);
   font-family: inter, serif;
@@ -313,7 +348,8 @@ body {
   column-gap: 100px;
 }
 
-button, button a {
+.hero-btn,
+.hero-btn a {
   padding: 15px 25px;
   font-size: 13px;
   box-sizing: border-box;
@@ -325,10 +361,11 @@ button, button a {
   color: black;
   font-weight: 500;
   transition: box-shadow 0.1s cubic-bezier(1, 0.15, 0.05, 1.13);
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
 
-.btn-home{
+.btn-home {
   fill: black;
   width: 15px;
   height: 22px;
@@ -338,17 +375,17 @@ button, button a {
   transition: fill 0.2s ease-in-out;
 }
 
-button:hover{
-  background-color: rgba(0, 0, 0, 0.673);
+.hero-btn:hover {
+  background-color: black;
   color: white;
   box-shadow: 0px 0px 10px cyan;
 }
-button:hover .btn-home{
+.hero-btn:hover .btn-home {
   fill: white;
   transform: translateX(4px);
 }
 
-.me-box{
+.me-box {
   perspective: 1000px;
 }
 
@@ -509,19 +546,19 @@ button:hover .btn-home{
   row-gap: 6px;
   font-family: poppins, serif;
   font-size: small;
-  color: rgba(255, 255, 255, 0.806);
+  color: var(--textcolor);
   border-radius: 15px;
-  border: 1px solid white;
+  /* border: 1px solid var(--headcolor); */
   box-shadow: 0px 0px 8px cyan;
   transition: transform 0.2s ease-in-out;
 }
 
-.proj a{
+.proj a {
   text-decoration: none;
-
+  color: rgb(82, 174, 255);
 }
 
-.proj a:hover{
+.proj a:hover {
   text-decoration: underline;
 }
 
@@ -537,7 +574,7 @@ button:hover .btn-home{
   width: 305px;
   height: 170px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 2px solid var(--headcolor);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -563,6 +600,61 @@ button:hover .btn-home{
   box-sizing: border-box;
 }
 
+/* CONTACT FORM */
+.contact-form{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  row-gap: 25px;
+}
+
+.input-box{
+  padding: 5px;
+  box-sizing: border-box;
+  width: 60vw;
+  height: 6vh;
+  background-color: var(--bgcolor);
+  border: 1px solid var(--headcolor);
+  box-shadow: 0px 0px 5px cyan;
+  color: var(--headcolor);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.message{
+  padding: 5px;
+  box-sizing: border-box;
+  width: 60vw;
+  height: 6vh;
+  background-color: var(--bgcolor);
+  border: 1px solid var(--headcolor);
+  box-shadow: 0px 0px 5px cyan;
+  height: 10vh;
+  color: var(--headcolor);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+.submit-form-btn{
+  width: 20%;
+  height: 5vh;
+  margin: auto;
+  font-weight: 700;
+  background-color: cyan;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  transition: letter-spacing 0.3s ease-in-out;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.submit-form-btn:hover{
+  background-color: rgba(0, 255, 255, 0.796);
+  letter-spacing: 1px;
+}
+
 .contact-links {
   margin-top: 45px;
   margin-bottom: 150px;
@@ -572,14 +664,14 @@ button:hover .btn-home{
   column-gap: 30px;
 }
 
-.social-links-box{
+.social-links-box {
   width: 76px;
   height: 76px;
   box-sizing: border-box;
 }
 
 .social-links {
-  background-color: none;
+  background-color: rgb(31, 30, 30);
   padding: 6px;
   box-sizing: border-box;
   border-radius: 40px;
@@ -590,7 +682,6 @@ button:hover .btn-home{
   transition: background-color 1s ease-in-out;
   transition: box-shadow 2s ease-in-out;
   transition: transform 0.25s ease-in-out;
- 
 }
 
 .social-links:hover {
@@ -599,25 +690,23 @@ button:hover .btn-home{
   transform: scale(1.05);
 }
 
-.comment{
+.comment {
   color: var(--headcolor);
   font-family: poppins, serif;
+  display: inline;
   font-size: smaller;
   font-weight: 600;
   background-color: rgba(0, 255, 255, 0.234);
   padding: 6px;
   border-radius: 25px;
   margin-top: 12px;
-  visibility: hidden;
-  transition: transform 0.4s ease-in-out;
-  transition: visibility 0.2s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
   box-sizing: border-box;
 }
 
-.social-links:hover ~ .comment{
-  transform: translateY(30%);
-  visibility: visible;
-  
+.social-links:hover ~ .comment {
+  opacity: 1;
 }
 
 .footer {
@@ -633,27 +722,28 @@ button:hover .btn-home{
   cursor: pointer;
 }
 
-.footer:hover{
+.footer:hover {
   background-color: black;
   color: white;
   box-shadow: 0px 0px 10px cyan;
 }
 
-.page-up-button{
+.page-up-button {
   position: fixed;
   right: 20px;
   bottom: 20px;
 }
 
-.page-btn{
+.page-btn {
   padding: 5px;
   border-radius: 50%;
   background-color: grey;
   stroke: cyan;
-  transition: background-color 0.4s ease-in-out, stroke 0.4s ease-in-out, transform 0.5s ease-in-out;
+  transition: background-color 0.4s ease-in-out, stroke 0.4s ease-in-out,
+    transform 0.5s ease-in-out;
 }
 
-.page-btn:hover{
+.page-btn:hover {
   background-color: black;
   stroke: white;
   transform: scale(1.1);
